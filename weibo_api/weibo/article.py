@@ -26,7 +26,7 @@ class Article(Base):
         return None
 
     @property
-    @normal_attr()
+    @normal_attr(name_in_json='article')
     def content(self):
         """
         文章内容HTML
@@ -121,14 +121,17 @@ class Articles(Base):
         return ARTICLE_LIST_URL.format(id=self._id, page_num=self._page_num)
 
     @property
-    @streaming(name_in_json='cards')
-    def _cards(self):
+    @streaming()
+    def data(self):
         return None
 
     @property
-    @streaming(name_in_json='cardlistInfo')
+    def _cards(self):
+        return self.data.card
+
+    @property
     def _cardlistInfo(self):
-        return None
+        return self.data.cardlistInfo
 
     @property
     def total(self):

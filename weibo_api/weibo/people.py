@@ -21,8 +21,12 @@ class People(Base):
 
     @property
     @streaming()
-    def userInfo(self):
+    def data(self):
         return None
+
+    @property
+    def userInfo(self):
+        return self.data.userInfo
 
     @property
     def id(self):
@@ -139,14 +143,17 @@ class Peoples(Base):
         return FOLLOWERS_LIST_URL.format(id=self._id, page_num=self._page_num)
 
     @property
-    @streaming(name_in_json='cards')
-    def _cards(self):
+    @streaming()
+    def data(self):
         return None
 
     @property
-    @streaming(name_in_json='cardlistInfo')
+    def _cards(self):
+        return self.data.cards
+
+    @property
     def _cardlistInfo(self):
-        return None
+        return self.data.cardlistInfo
 
     @property
     def _card_group(self):
