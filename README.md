@@ -3,7 +3,7 @@
 ![Python Version](https://img.shields.io/badge/python-2.7%20%7C%203.5%20%7C%203.6%20%7C%203.7-blue.svg)
 ![Build Version](https://img.shields.io/badge/version-v0.0.5-orange.svg)
 
-Note: Create this repo because the original has never been updated. Hopefully this repo will be merged back one day.
+Note: Create this repo because the original has never been updated. Hopefully this modified repo will be merged back one day.
 
 一个免登陆获取新浪微博数据的Python库，简单易用
 
