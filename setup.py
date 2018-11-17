@@ -13,10 +13,10 @@ setup(
     keywords=['weibo', 'network', 'http', 'JSON'],
     version=weibo_api.__version__,
     packages=['weibo_api', 'weibo_api.weibo', 'weibo_api.config', 'weibo_api.utils'],
-    url='https://github.com/hukaixuan/weibo-api',
+    url='https://github.com/theandychung/weibo-api',
     license='MIT',
-    author='hukaixuan',
-    author_email='hukx.michael@gmail.com',
+    author='theandychung',
+    author_email='theandychung@gmail.com',
     description='对微博m站API进行封装，提供简单易用的用户接口来免登陆获取微博数据',
     install_requires=[
         'requests>=2.10.0',
