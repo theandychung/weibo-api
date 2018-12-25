@@ -53,6 +53,8 @@ class Base(object):
 
         data 从 :any:`_build_data` 中获取。
 
+        proxies:any: get from _proxies.
+
         :raise: 当返回的数据无法被解析成 JSON
           或 JSON 中含有 'message' 字段时，会抛出 :any:`GetDataErrorException`
         """

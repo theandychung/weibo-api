@@ -125,7 +125,7 @@ class People(Base):
 
 
 class Peoples(Base):
-    def __init__(self, uid, cache, session, utype='follower'):
+    def __init__(self, uid, cache, session, proxies=None, utype='follower'):
         """
         粉丝或关注的用户
         :param uid: 
@@ -133,7 +133,7 @@ class Peoples(Base):
         :param session: 
         :param utype: 用户类型，follower表示他的粉丝，follow表示他关注的用户
         """
-        super(Peoples, self).__init__(uid, cache, session)
+        super(Peoples, self).__init__(uid, cache, session, proxies)
         self._page_num = 1
         self._utype = utype
 
