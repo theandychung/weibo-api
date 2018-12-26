@@ -8,8 +8,8 @@ __all__ = ['WeiboClient']
 class WeiboClient(object):
     def __init__(self, proxies=None):
         self._session = requests.session()
-        self._session.proxies.update(proxies)
-        # self._session.proxies = proxies
+        # self._session.proxies.update(proxies)
+        self._session.proxies = proxies
 
     def people(self, uid):
         """
