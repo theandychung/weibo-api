@@ -11,9 +11,6 @@ class WeiboClient(object):
         self._session.proxies.update(proxies)
         # self._session.proxies = proxies
 
-    def test(self):
-        print(self._session.get('https://httpbin.org/ip').text)
-
     def people(self, uid):
         """
         用户相关信息
