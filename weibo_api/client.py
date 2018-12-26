@@ -9,6 +9,10 @@ class WeiboClient(object):
     def __init__(self, proxies=None):
         self._session = requests.session()
         self._session.proxies.update(proxies)
+        # self._session.proxies = proxies
+
+    def test(self):
+        print(self._session.get('https://httpbin.org/ip').text)
 
     def people(self, uid):
         """
