@@ -1,7 +1,7 @@
 # Weibo-api
 
 ![Python Version](https://img.shields.io/badge/python-2.7%20%7C%203.5%20%7C%203.6%20%7C%203.7-blue.svg)
-![Build Version](https://img.shields.io/badge/version-v0.0.5-orange.svg)
+![Build Version](https://img.shields.io/badge/version-v0.0.6-orange.svg)
 
 [Sina Weibo](https://www.weibo.com) is a is a Chinese microblogging (weibo) website similar to [Twitter](https://twitter.com/). This api is a python package allowing users to fetch weibo posts without logging into any account.
 
